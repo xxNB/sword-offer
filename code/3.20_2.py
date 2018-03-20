@@ -1,5 +1,7 @@
 # -*- coding: utf-8 -*-
 
+# 输入一个链表，输入该链表中倒数第k个结点
+
 class Solution:
     def FindKthToTail(self, head, k):
         # write code here
