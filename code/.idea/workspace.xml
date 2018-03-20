@@ -34,21 +34,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="3.20_3.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="3.20_3.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/3.20_3.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="48">
-              <caret line="2" column="48" lean-forward="false" selection-start-line="2" selection-start-column="48" selection-end-line="2" selection-end-column="48" />
+            <state relative-caret-position="152">
+              <caret line="15" column="21" lean-forward="true" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="3.20_4.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="3.20_4.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/3.20_4.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="25">
-              <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+            <state relative-caret-position="72">
+              <caret line="3" column="2" lean-forward="false" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
               <folding />
             </state>
           </provider>
@@ -127,7 +127,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/day1.py" />
-        <option value="$PROJECT_DIR$/3.20_4.py" />
         <option value="$PROJECT_DIR$/3.20_5.py" />
         <option value="$PROJECT_DIR$/3.20_6.py" />
         <option value="$PROJECT_DIR$/3.20_7.py" />
@@ -137,6 +136,7 @@
         <option value="$PROJECT_DIR$/3.20_1.py" />
         <option value="$PROJECT_DIR$/3.20_2.py" />
         <option value="$PROJECT_DIR$/3.20_3.py" />
+        <option value="$PROJECT_DIR$/3.20_4.py" />
       </list>
     </option>
   </component>
@@ -341,14 +341,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/3.20_4.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/3.20_9.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
@@ -383,8 +375,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/3.20_3.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="2" column="48" lean-forward="false" selection-start-line="2" selection-start-column="48" selection-end-line="2" selection-end-column="48" />
+        <state relative-caret-position="152">
+          <caret line="15" column="21" lean-forward="true" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/3.20_4.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="3" column="2" lean-forward="false" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
           <folding />
         </state>
       </provider>
