@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# 输入俩个链表，找出它们的第一个公共节点
+# 输入俩个链表，找出它们的第一个公共节点。
 
 class Solution:
     def FindFirstCommonNode(self, head1, head2):
