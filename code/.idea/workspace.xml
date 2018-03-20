@@ -14,11 +14,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="3.20_1.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="3.20_1.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/3.20_1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+            <state relative-caret-position="192">
+              <caret line="8" column="23" lean-forward="true" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -74,7 +74,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="3.20_10.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="3.20_10.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/3.20_10.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="816">
@@ -136,6 +136,7 @@
         <option value="$PROJECT_DIR$/3.20_8.py" />
         <option value="$PROJECT_DIR$/3.20_9.py" />
         <option value="$PROJECT_DIR$/3.20_10.py" />
+        <option value="$PROJECT_DIR$/3.20_1.py" />
       </list>
     </option>
   </component>
@@ -364,14 +365,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/3.20_1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/3.20_9.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
@@ -384,6 +377,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="816">
           <caret line="34" column="0" lean-forward="true" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/3.20_1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="8" column="23" lean-forward="true" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
           <folding />
         </state>
       </provider>
