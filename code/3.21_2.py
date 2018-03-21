@@ -9,4 +9,3 @@ class Solution:
         for i in range(number):
             a, b = b, a+b
         return a
-            
