@@ -18,3 +18,4 @@ class Solution:
             a = b
             # 左右同时遍历只加一次
             d = d + 1
+        return d
