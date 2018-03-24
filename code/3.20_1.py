@@ -14,7 +14,8 @@ class Solution:
                 odd_number.append(item)
             else:
                 even_number.append(item)
-        return even_number+odd_number
+        return even_number + odd_number
+
 
 I = Solution()
-print I.reorderarray([1,2,3,4,5,6,7])
+print I.reorderarray([1, 2, 3, 4, 5, 6, 7])
