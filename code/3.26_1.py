@@ -19,4 +19,3 @@ class Solution:
         self.midnode(root.left)
         result.append(root)
         self.midnode(root.right)
-        
