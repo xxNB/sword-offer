@@ -16,7 +16,7 @@ class Solution:
     def HasSubtree(self, pRoot1, pRoot2):
         if not pRoot1 or not pRoot2:
             return False
-        # 干掉左或者右，继续往下走
+        # 干掉左或者右，继续往下走.
         return self.is_subtree(pRoot1, pRoot2) or self.HasSubtree(pRoot1.left, pRoot2) or self.HasSubtree(pRoot1.right,
                                                                                                           pRoot2)
 
