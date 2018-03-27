@@ -7,12 +7,13 @@
 class Solution:
     def FindContinuousSequrnce(self, tsum):
             # write code here
-            res = []
-            for i in range(1, tsum / 2 + 1):
-                for j in range(i, tsum / 2 + 2):
-                    tmp = (j + i) * (j - i + 1) / 2
-                    if tmp > tsum:
-                        break
-                    elif tmp == tsum:
-                        res.append(range(i, j + 1))
-            return res
+        res = []
+        for i in xrange(1, tsum / 2 + 1):
+            for j in xrange(i, tsum / 2 + 2):
+                # (上底加下底)乘高除以2
+                tmp = (j + i) * (j - i + 1) / 2
+                if tmp > tsum:
+                    break
+                elif tmp == tsum:
+                    res.append(xrange(i, j + 1))
+        return res
