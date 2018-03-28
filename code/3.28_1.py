@@ -5,7 +5,7 @@
 
 
 class Solution:
-    # 根始终是左的下一个节点，出发点在做节点
+    # 根始终是左的下一个节点，出发点在左节点
     def GetNext(self, pNode):
         if not pNode:
             return pNode
