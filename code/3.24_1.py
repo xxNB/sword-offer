@@ -16,4 +16,10 @@ class Solution:
             return ""
         num = map(str, numbers)
         num.sort(lambda x, y: cmp(x + y, y + x))
-        return ''.join(num)
+        print ''.join(num)
+
+
+c = Solution()
+c.PrintMinNumber([2, 3, 4, 5, 34, 53])
+
+

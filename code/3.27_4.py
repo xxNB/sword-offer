@@ -13,6 +13,7 @@ class Solution:
         indexFive = 0
         for i in range(index - 1):
             newUgly = min(uglyList[indexTwo] * 2, uglyList[indexThree] * 3, uglyList[indexFive] * 5)
+            print newUgly
             uglyList.append(newUgly)
             if (newUgly % 2 == 0):
                 indexTwo += 1
@@ -20,4 +21,9 @@ class Solution:
                 indexThree += 1
             if (newUgly % 5 == 0):
                 indexFive += 1
+            print i, indexTwo, indexThree, indexFive
         return uglyList[-1]
+
+
+c = Solution()
+print c.GetUglyNumber_Solution(10)

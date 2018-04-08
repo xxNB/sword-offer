@@ -9,11 +9,13 @@ class Solution:
     def GetNext(self, pNode):
         if not pNode:
             return pNode
+        # 向下
         if pNode.right:
             left1 = pNode.right
             while left1.left1:
                 left1 = left1.left
             return left1
+        # 向上
         while pNode.next:
             tmp = pNode.next
             if tmp.left == pNode:
