@@ -8,8 +8,8 @@ import sys
 def merge(nums, first, middle, last):
     lnums = nums[first:middle + 1]
     rnums = nums[middle + 1:last + 1]
-    print "lnums", lnums
-    print "rnums", rnums
+    print ("lnums", lnums)
+    print ("rnums", rnums)
     lnums.append(sys.maxint)
     rnums.append(sys.maxint)
     l = 0
@@ -34,6 +34,8 @@ def merge_sort(nums, first, last):
 
 
 nums = [10, 8, 4, -1, 2, 6, 7, 3]
-print "nums is:", nums
+print ("nums is:", nums)
 merge_sort(nums, 0, 7)
-print "merge sort:", nums
+print ("merge sort:", nums)
+
+n*logn

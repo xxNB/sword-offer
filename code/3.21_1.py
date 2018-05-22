@@ -4,14 +4,10 @@
 
 class Solution:
     def jumpfloorii(self, number):
-        if number <= 0:
-            val = 0
-        elif number == 1:
-            val = 1
-        elif number == 2:
-            val = 2
+        if number < 2:
+            return number
         else:
             val = 2
-            for i in range(3, number+1):
+            for _ in range(3, number+1):
                 val = 2*val
         return val

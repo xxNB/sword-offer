@@ -10,6 +10,7 @@ class Solution:
         last = None
 
         while pHead:
+            # 把当前节点变成下一个节点，使下一个节点指向当前节点
             tmp = pHead.next
             pHead.next = last
             last = pHead

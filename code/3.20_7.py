@@ -12,6 +12,7 @@ class Solution:
     def Mirror(self, root):
         if root is None:
             return
+        # 左为右，右为左
         root.left, root.right = root.right, root.left
         self.Mirror(root.left)
         self.Mirror(root.right)

@@ -8,10 +8,10 @@ class Solution:
         global result
         result = []
         self.midnode(pRoot)
-        if k<= 0 or len(result) < k:
+        if k <= 0 or len(result) < k:
             return None
         else:
-            return result[k-1]
+            return result[k - 1]
 
     def midnode(self, root):
         if not root:

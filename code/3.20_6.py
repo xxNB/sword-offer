@@ -10,9 +10,15 @@ class Solution:
         stack = []
         for i in pushV:
             stack.append(i)
+            # print(stack)
             while len(stack) and stack[-1] == popV[0]:
                 stack.pop()
                 popV.pop(0)
+                print(stack)
+        # 如果弹出不一致，必然遗留
         if len(stack):
             return False
-        return True
+        return True 
+
+r = Solution()
+print(r.IsPopOrder([1,2,3,4,5], [5,4,2,3,1]))

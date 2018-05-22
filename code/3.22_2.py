@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# 输入一棵二叉树，判断该二叉树是否是平衡二叉树
+# 输入一棵二叉树，判断该二叉树是否是<<平衡二叉树>>
 
 class Solution:
     def IsBalanced_Solution(self, pRoot):
@@ -17,3 +17,5 @@ class Solution:
             rp = rp.right
         if lt == rt:
             return True
+
+

@@ -5,9 +5,9 @@
 
 class RandomListNode:
     def __init__(self, x):
-        self.label = x
-        self.next = None
-        self.random = None
+        self.label = x # 节点值
+        self.next = None # 指向下一个节点
+        self.random = None # 指向任意一个节点
 
 
 class Solution:

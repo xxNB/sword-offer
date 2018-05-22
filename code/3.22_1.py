@@ -9,6 +9,7 @@ class Solution:
         a = [pRoot]
         d = 0
         while a:
+            # b来收集每一层的东西
             b = []
             for node in a:
                 if node.left:
@@ -19,3 +20,4 @@ class Solution:
             # 左右同时遍历只加一次
             d = d + 1
         return d
+

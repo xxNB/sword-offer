@@ -14,6 +14,7 @@ class Solution:
         if len(array) < 2:
             return array
         pivot = array[0]
+        # 小于pivot放左边，大于pivot放右边
         less = [i for i in array[1:] if i <= pivot]
         greater = [i for i in array[1:] if i > pivot]
         return self.quicksort(less) + [pivot] + self.quicksort(greater)
