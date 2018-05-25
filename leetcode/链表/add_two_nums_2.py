@@ -7,6 +7,9 @@ class ListNode(object):
         self.val = val
         self.next = next
 
+    def __repr__(self):
+        return "%s-->%s" % (self.val, self.next)
+
 
 class Solution:
     """
@@ -32,7 +35,6 @@ class Solution:
                 p.val += l2.val
                 l2 = l2.next
             s -= 1
-
         p = h
         while p:
             q = p.next
@@ -53,3 +55,18 @@ class Solution:
             c += 1
             h = h.next
         return c
+
+
+l1 = ListNode(6)
+l1.next = ListNode(1)
+l1.next.next = ListNode(7)
+# l1.next.next.next = ListNode(None)
+l2 = ListNode(3)
+l2.next = ListNode(9)
+l2.next.next = ListNode(5)
+# l2.next.next.next = ListNode(None)
+print(l1)
+print(l2)
+
+c = Solution()
+c.addLists2(l1, l2)
