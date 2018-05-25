@@ -57,6 +57,7 @@ class OrderedDict(dict):
         'od.__delitem__(y) <==> del od[y]'
         # Deleting an existing item uses self.__map to find the link which gets
         # removed by updating the links in the predecessor and successor nodes.
+        # 触发dict的__DELITEM__
         dict_delitem(self, key)
         link = self.__map.pop(key)
         link_prev = link.prev
@@ -175,8 +176,10 @@ class OrderedDict(dict):
         is raised.
 
         '''
+        # 弹出任意key
         if key in self:
             result = self[key]
+            # 触发__delitem__
             del self[key]
             return result
         if default is self.__marker:
