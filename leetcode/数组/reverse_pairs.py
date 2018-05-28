@@ -8,6 +8,7 @@ Given A = [2, 4, 1, 3, 5] , (2, 1), (4, 1), (4, 3) are reverse pairs. return 3
 """
 class Solution:
     """
+    归并排序思想
     @param A: an array
     @return: total of reverse pairs
     """
