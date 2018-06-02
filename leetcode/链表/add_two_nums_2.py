@@ -1,7 +1,15 @@
 #########################################################
 # 链表求和 ||
 #########################################################
+"""
+221. Add Two Numbers II
+You have two numbers represented by a linked list, where each node contains a single digit. The digits are stored in forward order, such that the 1's digit is at the head of the list. Write a function that adds the two numbers and returns the sum as a linked list.
 
+Example
+Given 6->1->7 + 2->9->5. That is, 617 + 295.
+
+Return 9->1->2. That is, 912.
+"""
 class ListNode(object):
     def __init__(self, val, next=None):
         self.val = val
@@ -35,10 +43,14 @@ class Solution:
                 p.val += l2.val
                 l2 = l2.next
             s -= 1
+        print("h", h)
         p = h
+        print("p", p)
         while p:
             q = p.next
+            print("q", q)
             while q and q.val == 9:
+                # 有几个9，就比p超前几个， 9+1就会一直往前推
                 q = q.next
             if q and q.val > 9:
                 while p != q:
@@ -69,4 +81,4 @@ print(l1)
 print(l2)
 
 c = Solution()
-c.addLists2(l1, l2)
+print(c.addLists2(l1, l2))

@@ -10,6 +10,7 @@ Challenge
 Do it in-place.
 """
 
+
 class Solution:
     """
     @param: nums: an array of integers

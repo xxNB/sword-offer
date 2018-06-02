@@ -19,6 +19,7 @@ class Solution:
             count += 1
             if x > n2:
                 if x >= n1:
+                    # n1为先
                     n1, n2 = x, n1
                 else:
                     n2 = x

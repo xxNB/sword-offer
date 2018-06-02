@@ -21,9 +21,7 @@ class Solution:
     def mergeSort(self, A, l, r):
         if l >= r:
             return 0
-        print("l+r", l+r)
         m = (l + r) // 2
-        print(m)
         ans = self.mergeSort(A, l, m) + self.mergeSort(A, m + 1, r)
         i, j, k = l, m + 1, l
         while i <= m and j <= r:
@@ -35,7 +33,7 @@ class Solution:
                 self.tmp[k] = A[i]
                 i += 1
             k += 1
-
+        # 有一个要爆掉
         while i <= m:
             self.tmp[k] = A[i]
             k += 1
@@ -46,7 +44,6 @@ class Solution:
             j += 1
         for i in range(l, r + 1):
             A[i] = self.tmp[i]
-
         return ans
 
 c = Solution()

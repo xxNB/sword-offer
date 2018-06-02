@@ -36,11 +36,12 @@ class Solution:
         if len(B) == 0:
             return A[k - 1]
         if k == 1:
+            # 一直瓜分到二者长度都为一
             return min(A[0], B[0])
 
         a = A[k // 2 - 1] if len(A) >= k // 2 else None
         b = B[k // 2 - 1] if len(B) >= k // 2 else None
-
+        # a<b(A mid 小于 B mid), a is None(A的元素个数 < k/2)
         if b is None or (a is not None and a < b):
             return self.findKth(A[k // 2:], B, k - k // 2)
         return self.findKth(A, B[k // 2:], k - k // 2)

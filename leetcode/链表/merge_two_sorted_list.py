@@ -27,5 +27,6 @@ class Solution:
                 cur.next = l2
                 l2 = l2.next
             cur = cur.next
+        # l1 or l2 有一个没有了，继续指向l1 or l2
         cur.next = l1 or l2
         return dummy.next

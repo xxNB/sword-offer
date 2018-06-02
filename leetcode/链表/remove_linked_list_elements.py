@@ -16,6 +16,7 @@ class Solution:
     """
     def removeElements(self, head, val):
 
+        # 设置虚拟节点方便删除第一个
         new_head = pre = ListNode(0)
         pre.next = head
         while head:

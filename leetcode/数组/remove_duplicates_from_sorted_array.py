@@ -24,6 +24,7 @@ class Solution:
         for i in range(1, len(A)):
             if A[index] != A[i]:
                 index += 1
+                # 跟上脚步去比较
                 A[index] = A[i]
 
         return index + 1

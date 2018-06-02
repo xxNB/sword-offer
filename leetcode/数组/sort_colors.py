@@ -20,6 +20,7 @@ class Solution:
         start, end = index, len(A) - 1
         while start <= end:
             while start <= end and A[start] == flag:
+                print("start, end", start, end)
                 start += 1
             while start <= end and A[end] != flag:
                 end -= 1
@@ -27,7 +28,7 @@ class Solution:
                 A[start], A[end] = A[end], A[start]
                 start += 1
                 end -= 1
-        print("return start", start)
+        # print("return start", start)
         return start
 
     def sortColors(self, A):
