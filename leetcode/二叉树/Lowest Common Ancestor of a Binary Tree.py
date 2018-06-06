@@ -62,6 +62,7 @@ class Solution:
                 else:
                     if peek == target:
                         return stack
+                    # stack最右边的节点
                     lastVisit = stack.pop()
                     root = None
         return stack
