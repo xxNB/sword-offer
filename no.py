@@ -1,14 +1,15 @@
-import pika
+def func1(func):
+    c = 1
+    def func2():
+        print("=======")
+        c = 10*100
+        return c
+    return func2
 
+@func1
+def b():
+    pass
 
-connection = pika.BlockingConnection(
-    pika.ConnectionParameters(host='localhost'))
-channel = connection.channel()
+b()
 
-channel.queue_declare(queue='hello')
-
-channel.basic_publish(exchange='',
-                      routing_key='hello',
-                      body='Hello World!')
-print(" [x] Sent 'Hello World!'")
-connection.close()
+import _threading_local
