@@ -54,6 +54,7 @@ class Solution:
                 q = q.next
             if q and q.val > 9:
                 while p != q:
+                    # 恢复到q的位置
                     p.val += 1
                     p = p.next
                     p.val -= 10

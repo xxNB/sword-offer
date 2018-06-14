@@ -1,39 +1,28 @@
-import errno
-import functools
-import socket
+# from tornado import gen
+# from tornado.web import RequestHandler
+# from tornado.httpclient import AsyncHTTPClient
+#
+#
+# class GenAsyncHandler(RequestHandler):
+#     @gen.coroutine
+#     def get(self):
+#         http_client = AsyncHTTPClient()
+#         response = yield http_client.fetch("http://example.com")
+#         do_something_with_response(response)
+#         self.render("template.html")
+#
+#
+# def do_something_with_response(response):
+#     pass
+#
 
-import tornado.ioloop
-from tornado import gen
-from tornado.iostream import IOStream
+from flask import Flask
 
+app = Flask(__name__)
 
-@gen.coroutine
-def handle_connection(connection, address):
-    stream = IOStream(connection)
-    message = yield stream.read_until_close()
-    print("message from client:", message.decode().strip())
+@app.route("/")
+def func():
+    return "The world is bad"
 
+app.run()
 
-def connection_ready(sock, fd, events):
-    while True:
-        try:
-            connection, address = sock.accept()
-        except socket.error as e:
-            if e.args[0] not in (errno.EWOULDBLOCK, errno.EAGAIN):
-                raise
-            return
-        connection.setblocking(0)
-        handle_connection(connection, address)
-
-
-if __name__ == '__main__':
-    sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM, 0)
-    sock.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
-    sock.setblocking(0)
-    sock.bind(("", 8888))
-    sock.listen(128)
-
-    io_loop = tornado.ioloop.IOLoop.current()
-    callback = functools.partial(connection_ready, sock)
-    io_loop.add_handler(sock.fileno(), callback, io_loop.READ)
-    io_loop.start()
