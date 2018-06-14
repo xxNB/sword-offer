@@ -28,17 +28,19 @@ class Solution:
         dummy = ListNode(-1)
         dummy.next = head
         cur = dummy
-        front, prev, last  = None, None, None
-        for i in range( m):
-            print(i)
-            # pre截止为   要反转的前俩个
+        front, prev, last = None, None, None
+        if m == 1:
+            prev = cur
+            last = cur.next
+        for i in range(m - 1):
+            #
             cur = cur.next
             prev = cur
             last = cur.next
-        print("cur", cur)
-        for i in range(m, n+1):
+
+        for i in range(m, n + 1):
             # print("before reserved", dummy.next)
-            #new_head>prev>cur>null
+            # new_head>prev>cur>null
             cur = prev.next
             prev.next = cur.next
             cur.next = front
@@ -49,7 +51,6 @@ class Solution:
         prev.next = front
         last.next = cur
         return dummy.next
-
 
 l1 = ListNode(1)
 l1.next = ListNode(2)
