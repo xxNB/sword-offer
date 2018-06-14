@@ -45,10 +45,13 @@ class Solution:
         newHead = head.next
         curr = head
         while curr is not None:
+            # 赋值
             newNode = curr.next
+            # 指向
             curr.next = curr.next.next
             if newNode.next is not None:
                 newNode.next = newNode.next.next
+            # 此时的curr.next已经是curr.next.next.next了
             curr = curr.next
 
         return newHead

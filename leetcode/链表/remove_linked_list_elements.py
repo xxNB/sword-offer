@@ -23,6 +23,8 @@ class Solution:
             if head.val == val:
                 pre.next = head.next
             else:
+                # pre往下走
                 pre = pre.next
+            # head往下走
             head = head.next
         return new_head.next

@@ -23,6 +23,7 @@ class Solution:
             return None
         last = None
         while head.next:
+            # 第一步赋值准备，第二步转置
             temp = head.next
             head.next = last
             head = temp

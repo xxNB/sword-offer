@@ -10,7 +10,7 @@ class ListNode(object):
         self.next = next
 
     def __repr__(self):
-        return "%s-->%s" % (self.val, self.next)
+        return "{}->{}->{}".format(self.val, self.next.val, self.next.next.val)
 
 
 class Solution:
@@ -24,28 +24,30 @@ class Solution:
     def reverseBetween(self, head, m, n):
         # write your code here
         # 设置虚拟节点
+
         dummy = ListNode(-1)
         dummy.next = head
-        prev = dummy
-        for i in range(m - 1):
+        cur = dummy
+        front, prev, last  = None, None, None
+        for i in range( m):
+            print(i)
             # pre截止为   要反转的前俩个
-            print("prev", prev)
-            prev = prev.next
-        new_head = prev
-        prev = new_head.next
-        # 定位到要反转的那个节点 !
-        cur = prev.next
-        # print("prev", prev)
-        # print("cur", cur)
-        # print("new_head", new_head)
-        for i in range(m, n):
-            # print("before reserved", dummy.next)
-            prev.next = cur.next
-            cur.next = new_head.next
-            new_head.next = cur
             cur = cur.next
-            # print("after reserved", dummy.next)
+            prev = cur
+            last = cur.next
+        print("cur", cur)
+        for i in range(m, n+1):
+            # print("before reserved", dummy.next)
+            #new_head>prev>cur>null
+            cur = prev.next
+            prev.next = cur.next
+            cur.next = front
+            front = cur
 
+            # print("after reserved", dummy.next)
+        cur = prev.next
+        prev.next = front
+        last.next = cur
         return dummy.next
 
 
@@ -57,6 +59,5 @@ l1.next.next.next.next = ListNode(5)
 l1.next.next.next.next.next = ListNode(7)
 l1.next.next.next.next.next.next = ListNode(9)
 
-print("l1", l1)
 r = Solution()
-print(r.reverseBetween(l1, 4, 6))
+print(r.reverseBetween(l1, 3, 6))

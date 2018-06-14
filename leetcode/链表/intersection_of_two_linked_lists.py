@@ -25,7 +25,9 @@ class Solution:
             if p == q:
                 return p
             if not q:
+                # 将q赋值成headA头节点
                 q = headA
             if not p:
+                # 将p赋值成headB头节点
                 p = headB
         return p
