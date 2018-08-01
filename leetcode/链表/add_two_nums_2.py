@@ -47,10 +47,11 @@ class Solution:
         p = h
         print("p", p)
         while p:
+            # 使用双指针解决，q始终在p后面
             q = p.next
             print("q", q)
             while q and q.val == 9:
-                # 有几个9，就比p超前几个， 9+1就会一直往前推
+                # 有几个9，就比p往后推几个
                 q = q.next
             if q and q.val > 9:
                 while p != q:
@@ -59,6 +60,7 @@ class Solution:
                     p = p.next
                     p.val -= 10
             else:
+                # 直接把p按到q到位置
                 p = q
         return h if h.val else h.next
 
