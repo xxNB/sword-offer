@@ -1,7 +1,7 @@
 """
 6. Merge Two Sorted Arrays
 Merge two given sorted integer array A and B into a new sorted integer array.
-
+使用新的数组
 Example
 A=[1,2,3,4]
 

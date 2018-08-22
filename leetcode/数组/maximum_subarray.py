@@ -18,7 +18,7 @@ class Solution:
     def maxSubArray(self, A):
         # write your code here
         curr_sum = 0
-        max_sum = -100000
+        max_sum = float('-inf')
         for i in range(len(A)):
             if curr_sum < 0:
                 curr_sum = 0

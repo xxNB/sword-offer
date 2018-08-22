@@ -1,4 +1,5 @@
 class Solution:
+    # nums duplicates
     def permuteUnique(self, nums):
         length = len(nums)
         if length == 0:
@@ -15,3 +16,6 @@ class Solution:
             for j in self.permuteUnique(nums[:i]+nums[i+1:]):
                 ans.append([nums[i]]+j)
         return ans
+
+r = Solution()
+print(r.permuteUnique([1,1,2]))

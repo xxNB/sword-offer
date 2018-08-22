@@ -3,6 +3,7 @@ class Solution:
         length = len(matrix)
         for i in range(length):
             for j in range(i + 1, length):
+                # (0,1), (0,2), (0,3), (1,2), (1,3), (2,3)
                 temp = matrix[i][j]
                 matrix[i][j] = matrix[j][i]
                 matrix[j][i] = temp

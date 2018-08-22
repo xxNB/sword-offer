@@ -1,4 +1,3 @@
-# 打乱数组
 import random
 
 
@@ -17,10 +16,8 @@ def shuffle(lis):
 # knuth-durstenfeld shuffle
 
 def shuffle1(lis):
-    # 原地洗牌
     for i in range(len(lis) - 1, 0, -1):
         p = random.randrange(0, i + 1)
-        # 将随机抽到的交换到数组末尾，
 
         lis[i], lis[p] = lis[p], lis[i]
     return lis

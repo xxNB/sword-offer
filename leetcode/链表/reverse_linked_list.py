@@ -18,14 +18,11 @@ class Solution:
     @return: The new head of reversed linked list.
     """
     def reverse(self, head):
-        # write your code here
-        if head is None or head.next is None:
-            return None
-        last = None
-        while head.next:
-            # 第一步赋值准备，第二步转置
-            temp = head.next
-            head.next = last
-            head = temp
-            last = head
-        return head
+       prev = None
+       curr = head
+       while curr:
+           nextTemp = curr.next
+           curr.next = prev
+           prev = curr
+           curr = nextTemp
+       return prev

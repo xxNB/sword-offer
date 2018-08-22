@@ -16,9 +16,10 @@ class Solution:
     @return: [index1 + 1, index2 + 1] (index1 < index2)
     """
     def twoSum(self, nums, target):
-        # write your code here
-        for ix, i in enumerate(nums):
-            for nx, n in enumerate(nums[ix + 1:]):
-                if i + n == target:
-                    return [ix + 1, nx + ix+2]
+        dic = {}
+        for i, num in enumerate(nums):
+            if (target-num) in dic:
+                return i, dic[target-num]
+            dic[num]=i
+
 
