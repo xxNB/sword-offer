@@ -18,6 +18,7 @@ class Solution(object):
                 count += 1
             c = S[i]
 
+        # 记录最后一个
         if count > 2:
             res.append([start, len(S) - 1])
         return res
